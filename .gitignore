@@ -1,0 +1,7 @@
+# Ignore cache files
+__pycache__/
+
+# Ignore test files
+ok
+*.ok*
+tests/
