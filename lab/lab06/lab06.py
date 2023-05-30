@@ -95,12 +95,13 @@ def repeated(t, k):
     "*** YOUR CODE HERE ***"
     prev = next(t)
     i = 1
-    while True:
-        temp = next(t)
-        if temp == prev:
-            i += 1
+    for num in t:
+        if num == prev:
+             i += 1
         if i == k:
             return prev
-        if temp != prev:
-            prev = temp
+        if num != prev:
+            prev = num
             i = 1
+
+
